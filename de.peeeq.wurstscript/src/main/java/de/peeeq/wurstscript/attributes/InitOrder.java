@@ -136,10 +136,6 @@ public class InitOrder {
                 addCollectImportedPackage(callStack, e.getKey(), result, e.getKey().getImports());
             }
         }
-        /*WPackage configPackage = p.getModel().attrConfigOverridePackages().get(p);
-        if (configPackage != null) {
-            addCollectImportedPackage(callStack, p, result, configPackage.getImports());
-        }*/
         callStack.remove(callStack.size() - 1);
     }
 
